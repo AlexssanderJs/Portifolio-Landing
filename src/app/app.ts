@@ -1,5 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { AdicionaTarefa } from "./tarefas/adiciona-tarefa/adiciona-tarefa";
+import { GerenciaTarefa } from "./tarefas/gerencia-tarefa/gerencia-tarefa";
 
 @Component({
   selector: 'app-root',

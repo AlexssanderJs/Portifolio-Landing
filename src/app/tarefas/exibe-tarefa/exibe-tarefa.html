@@ -1,0 +1,12 @@
+<div>
+    <h1>Tarefas:</h1>
+    <ul>
+        @for(tarefa of listaTarefa; track tarefa.titulo) {
+            <li>
+                <h2>{{ tarefa.titulo }}</h2>
+                <p>{{ tarefa.descricao }}</p>
+                <p>Prioridade: {{ tarefa.prioridade }}</p>
+            </li>
+        }
+    </ul>
+</div>

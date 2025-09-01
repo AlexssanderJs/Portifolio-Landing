@@ -1,0 +1,13 @@
+<form action="">
+    <label for="titulo-tarefa">Titulo Tarefa:</label>
+    <input type="text" name="titulo-tarefa" id="titulo-tarefa" [(ngModel)]="novaTarefa.titulo">
+
+    <label for="descricao-tarefa">Descrição Tarefa:</label>
+    <input type="text" name="descricao-tarefa" id="descricao-tarefa" [(ngModel)]="novaTarefa.descricao">
+
+    <label for="prioridade-tarefa">Prioridade Tarefa:</label>
+    <input type="number" name="prioridade-tarefa" id="prioridade-tarefa" [(ngModel)]="novaTarefa.prioridade">
+
+    <button type="submit" (click)="submit()">Enviar Tarefa</button>
+
+</form>
