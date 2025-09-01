@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-botao',
@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './botao.scss'
 })
 export class Botao {
+
+  @Input() texto: string = "Buscar";
+  @Output() clique = new EventEmitter<void>();
+
+  aoClicar(): void {
+    this.clique.emit();
+  }
 
 }
