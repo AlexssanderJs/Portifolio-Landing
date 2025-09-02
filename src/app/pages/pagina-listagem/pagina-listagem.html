@@ -1,0 +1,12 @@
+@if(usuarios){
+    <ul>
+        @for (usuario of usuarios[0]; track $index) {
+            <li>{{ usuario.id }}</li>
+            <li>{{ usuario.name }}</li>
+            <li>{{ usuario.username }}</li>
+            <li>{{ usuario.email }}</li>
+            <li>{{ usuario.address }}</li>
+            <br>
+        }
+    </ul>
+}

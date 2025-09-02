@@ -1,0 +1,14 @@
+<div class="depoimentos-container">
+    <ul>
+        @for (depoimento of depoimentos; track $index) {
+            
+            <li><strong>ID do usuario:</strong> {{ depoimento.userId }}</li>
+            <li><strong>ID: </strong>{{ depoimento.id }}</li>
+            <li><strong>Titulo:</strong> {{ depoimento.title }}</li>
+            <li><strong>Descrição:</strong> {{ depoimento.body }}</li>
+            <br>
+            <hr>
+            <br>
+        }
+    </ul>
+</div>

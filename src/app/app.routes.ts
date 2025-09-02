@@ -5,6 +5,9 @@ import path from 'path';
 import { PaginaContador } from './page/pagina-contador/pagina-contador';
 import { AdicionaTarefa } from './tarefas/adiciona-tarefa/adiciona-tarefa';
 import { GerenciaTarefa } from './tarefas/gerencia-tarefa/gerencia-tarefa';
+import { PaginaListagem } from './pages/pagina-listagem/pagina-listagem';
+import { App } from './app';
+import { ListagemDepoimentos } from './pages/listagem-depoimentos/listagem-depoimentos';
 
 export const routes: Routes = [
     {
@@ -22,6 +25,13 @@ export const routes: Routes = [
     {
         path: 'tarefas',
         component: GerenciaTarefa
+    },
+    {
+        path: 'usuarios',
+        component: PaginaListagem
+    },
+    {
+        path: 'depoimentos',
+        component: ListagemDepoimentos
     }
-
 ];
